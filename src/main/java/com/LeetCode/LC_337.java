@@ -4,6 +4,10 @@ package com.LeetCode;
  * 打家劫舍  动态规划
  * root[0] = Math.max(rob(root.left)[0], rob(root.left)[1]) + Math.max(rob(root.right)[0], rob(root.right)[1])
  * root[1] = rob(root.left)[0] + rob(root.right)[0] + root.val;
+ *任何一个节点能偷到的最大钱的状态可以定义为
+ *
+ * 当前节点选择不偷: 当前节点能偷到的最大钱数 = 左孩子能偷到的钱 + 右孩子能偷到的钱
+ * 当前节点选择偷: 当前节点能偷到的最大钱数 = 左孩子选择自己不偷时能得到的钱 + 右孩子选择不偷时能得到的钱 + 当前节点的钱数
  *
  */
 public class LC_337 {
