@@ -1,5 +1,8 @@
 package com.LeetCode;
 
+/**
+ * 把值L~R之外的节点删掉
+ */
 public class LC_669 {
     public TreeNode trimBST(TreeNode root, int L, int R) {
         if(root==null)return null;
