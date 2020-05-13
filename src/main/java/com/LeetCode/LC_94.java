@@ -19,7 +19,9 @@ public class LC_94 {
 public List<Integer> inorderTraversal(TreeNode root) {
     List<Integer> list = new ArrayList<>();
     Stack<TreeNode> stack = new Stack<>();
-    if(root==null)return list;
+    if(root==null){
+        return list;
+    }
     TreeNode cur = root;
     while (cur!=null||stack.size()!=0){
         while (cur!=null){

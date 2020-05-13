@@ -50,10 +50,11 @@ public class test{
 //        t1.left=t2;
 //        t1.right=t3;
 //        System.out.println(sum(t1));
-        String a = "123";
-        a = a+"2";
-        a = "1321412";
-   //     Class A = a.getClass();
-        System.out.println(a);
+//        String a = "123";
+//        a = a+"2";
+//        a = "1321412";
+//   //     Class A = a.getClass();
+//        System.out.println(a);
+        System.out.println('z'-'A');
     }
 }

@@ -3,7 +3,7 @@ package com.jvm;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-class Ticket{  //资源类=实例变量+实例变量
+class Ticket{  //资源类=实例方法+实例变量
     private int number = 100;
     //List list = new ArrayList();
   //  synchronized  同步块

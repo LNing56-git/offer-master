@@ -6,7 +6,7 @@ package com.ln.question21;
  * 通过链表定义一个栈的数据结构，自定义栈的最小值方法min()出栈pop()入栈方法push（）
  *
  */
-public class question21 {
+public class   question21 {
     Node head = new Node(0);
     Node su = new Node(0);
 

@@ -4,8 +4,12 @@ import java.util.Stack;
 
 public class LC_109 {
     public TreeNode sortedListToBST(ListNode head) {
-        if (head==null)return null;
-        if (head.next==null)return new TreeNode(head.val);
+        if (head==null){
+            return null;
+        }
+        if (head.next==null){
+            return new TreeNode(head.val);
+        }
         ListNode pre = convert(head);
         ListNode mid = pre.next;
         pre.next=null;

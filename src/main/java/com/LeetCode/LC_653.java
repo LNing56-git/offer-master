@@ -10,16 +10,26 @@ public class LC_653 {
         sum(root,list);
         int i = 0;
         int j = list.size()-1;
-        while (list.get(j)>k)j--;
+        while (list.get(j)>k){
+            j--;
+        }
         while (i<j){
-            if (list.get(i)+list.get(j)>k)j--;
-            if (list.get(i)+list.get(j)<k)i++;
-            if (list.get(i)+list.get(j)==k)return true;
+            if (list.get(i)+list.get(j)>k){
+                j--;
+            }
+            if (list.get(i)+list.get(j)<k){
+                i++;
+            }
+            if (list.get(i)+list.get(j)==k){
+                return true;
+            }
         }
         return false;
     }
     public void sum(TreeNode treeNode,List<Integer> list){
-        if (treeNode==null)return;
+        if (treeNode==null){
+            return;
+        }
         sum(treeNode.left,list);
         list.add(treeNode.val);
         sum(treeNode.right,list);

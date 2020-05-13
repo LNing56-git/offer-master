@@ -34,7 +34,9 @@ public class MapSum {
         return sum(cur);
     }
     public int sum(TrieNode1 trieNode1) {
-        if (trieNode1==null)return 0;
+        if (trieNode1==null){
+            return 0;
+        }
         int sum = trieNode1.value;
         for (TrieNode1 temp:trieNode1.childs){
             sum+= sum(temp);

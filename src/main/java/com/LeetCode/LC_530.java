@@ -30,7 +30,7 @@ public int getMinimumDifference(TreeNode root) {
     return min;
 }
     public void convert(TreeNode treeNode,List<Integer> list){
-        if (treeNode==null)return;
+        if (treeNode==null){return;}
         convert(treeNode.left,list);
         list.add(treeNode.val);
         convert(treeNode.right,list);
